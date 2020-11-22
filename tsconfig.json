@@ -1,0 +1,52 @@
+{
+  "extends": "./node_modules/adonis-preset-ts/tsconfig",
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    ".nuxt",
+    "dist",
+    "node_modules",
+    "build"
+  ],
+  "compilerOptions": {
+    "lib": [
+      "ESNext.AsyncIterable",
+      "DOM"
+    ],
+    "baseUrl": ".",
+    "outDir": "build",
+    "rootDir": "./",
+    "sourceMap": true,
+    "allowJs": true,
+    "paths": {
+      "App/*": [
+        "./app/*"
+      ],
+      "Config/*": [
+        "./config/*"
+      ],
+      "Contracts/*": [
+        "./contracts/*"
+      ],
+      "Database/*": [
+        "./database/*"
+      ],
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./*"
+      ]
+    },
+    "types": [
+      "@adonisjs/core",
+      "@adonisjs/repl",
+      "@adonisjs/session",
+      "@adonisjs/view",
+      "@types/node",
+      "@nuxt/types",
+      "@adonisjs/lucid"
+    ]
+  }
+}

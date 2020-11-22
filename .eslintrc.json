@@ -1,0 +1,22 @@
+{
+  "root" : true,
+  "env" : {
+    "browser": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "extends" : [
+    "plugin:adonis/typescriptApp",
+    "plugin:nuxt/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "@nuxtjs/eslint-config-typescript"
+  ],
+  "plugins" : [
+  ],
+  // add your custom rules here
+  "rules" : {}
+}
