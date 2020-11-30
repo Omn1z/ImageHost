@@ -65,7 +65,7 @@ export default class ApiImagesController {
     imageInfo.path = newImageName
     imageInfo.url = md5(newImageName).substring(0, 7)
 
-    this.addWatermark(newImageName)
+    await this.addWatermark(newImageName)
 
     try {
       await imageInfo.save()
