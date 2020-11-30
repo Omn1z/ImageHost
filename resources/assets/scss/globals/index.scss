@@ -1,0 +1,22 @@
+* {
+  font-family: 'Roboto', serif;
+}
+
+body {
+  background: #f0f0f0;
+  animation: none
+}
+
+.empty {
+  min-height: 1px;
+}
+
+.animation_in {
+  animation: 1s __appear;
+}
+
+@keyframes __appear {
+  0% {
+    opacity: 0;
+  }
+}
